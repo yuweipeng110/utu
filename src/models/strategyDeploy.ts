@@ -1,0 +1,63 @@
+export type StrategyDeployInfo = {
+  id: number;
+  appId: number;
+  name: string;
+  createUser: string;
+  createTime: string;
+  modifyUser: string;
+  modifyTime: string;
+  stage: number;
+  status: number;
+  deployRemark: string;
+  orderName?: string;
+  submitter?: string;
+  submitTime?: string;
+  packageList?: [];
+  originalStage: number;
+  orderId: number;
+  flag: number;
+  type: number;
+  stageList: [number];
+  versionCode: number;
+  effectTime: string;
+  changeParam: any;
+  changeStrategyPackageCount: number;
+  changeStrategyCount: number;
+  isAllIpOk: number;
+  rollBackOrderId: number;
+};
+
+export type StrategyDeployDiffInfo = {
+  action: number;
+  contentId: number;
+  contentVersion: number;
+  packageId: number;
+  packageName: string;
+  originalContentId: number;
+  originalVersion: number;
+  originalStrategyList: [];
+  strategyList: [];
+  flowDiffList: [];
+};
+
+export type StrategyDeployRollbackInfo = {
+  id: number;
+  appId: number;
+  canRollBack: number;
+  createTime: string;
+  createUser: string;
+  deployRemark: string;
+  effectTime: string;
+  effectedScenes: string;
+  flag: number;
+  modifyTime: string;
+  modifyUser: string;
+  name: string;
+  stage: number;
+  status: number;
+  titanContent: string;
+  type: number;
+  updateTime: string;
+  updateUser: string;
+  versionCode: number;
+};
