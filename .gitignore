@@ -2,7 +2,7 @@
 
 # dependencies
 **/node_modules
-config/proxy.ts
+#config/proxy.ts
 # roadhog-api-doc ignore
 /src/utils/request-temp.js
 _roadhog-api-doc
